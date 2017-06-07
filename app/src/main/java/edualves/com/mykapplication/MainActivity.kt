@@ -1,5 +1,6 @@
 package edualves.com.mykapplication
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -47,7 +48,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(view: View?) {
-
+        val intent = Intent(this, DetailActivity::class.java)
+        val holder = view?.tag as MainAdapter.PhotoViewHolder
+        intent.putExtra(DetailActivity.PHOTO, mainAdapter?.getPhotos(holder.adapterPosition))
+        startActivity(intent)
     }
 
 }
