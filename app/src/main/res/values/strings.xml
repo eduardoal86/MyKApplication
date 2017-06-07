@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyKApplication</string>
+    <string name="fav_label">Favorites</string>
+    <string name="likes_label">Likes</string>
+</resources>
