@@ -1,4 +1,4 @@
-package edualves.com.mykapplication
+package edualves.com.mykapplication.ui
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
+import edualves.com.mykapplication.R
 import edualves.com.mykapplication.models.Photo
 
 /**
@@ -40,7 +41,7 @@ class MainAdapter (var photos: List<Photo>,
         return photos.size
     }
 
-    inner class PhotoViewHolder (itemView : View) : RecyclerView.ViewHolder (itemView) {
+    inner class PhotoViewHolder (itemView : View) : RecyclerView.ViewHolder(itemView) {
         var tags : TextView
         var likes : TextView
         var favorites : TextView

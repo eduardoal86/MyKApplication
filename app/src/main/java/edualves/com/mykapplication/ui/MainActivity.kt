@@ -1,4 +1,4 @@
-package edualves.com.mykapplication
+package edualves.com.mykapplication.ui
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.View
+import edualves.com.mykapplication.R
 import edualves.com.mykapplication.api.PhotoRetriever
 import edualves.com.mykapplication.models.Photo
 import edualves.com.mykapplication.models.PhotoList
